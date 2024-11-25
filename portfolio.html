@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #2284E7;
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h3 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .skill-item {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+  <img src="portfolio_logo.jpg" alt="Portfolio Logo" 
+       style="width: 180px; height: 100%;" />
+</div>
+      
+
+    <!-- Image Section -->
+    <div class="section image-container">
+        <h3>Profile Image</h3>
+        <img id="image_display" alt="Uploaded Resume Image" style="display: none;" />
+    </div>
+
+    <!-- Personal Details Section -->
+    <div class="section">
+        <h3>Personal Details</h3>
+        <p><strong>Name:</strong> <span class="name_display"></span></p>
+        <p><strong>Address:</strong> <span class="address_display"></span></p>
+        <p><strong>Phone:</strong> <span class="phone_display"></span></p>
+        <p><strong>Email:</strong> <span class="email_display"></span></p>
+    </div>
+
+    <!-- Job Title Section -->
+    <div class="section">
+        <h3>Job Title</h3>
+        <p id="job_title_display">No job title specified.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+        <h3>Skills</h3>
+        <div id="skills_display">No skills added.</div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+        <h3>Education</h3>
+        <div id="education_display"></div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section">
+        <h3>Experience</h3>
+        <div id="experience_display"></div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+        <h3>Projects</h3>
+        <div id="projects_display"></div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section">
+        <h3>Certifications</h3>
+        <div id="certification_display"></div>
+    </div>
+
+
+    <!-- Include the portfolio.js script -->
+    <script src="portfolio.js"></script>
+</body>
+</html>

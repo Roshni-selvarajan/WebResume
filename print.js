@@ -1,0 +1,3 @@
+function printCV() {
+    window.print();
+}
